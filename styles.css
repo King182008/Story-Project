@@ -61,7 +61,7 @@ a {
 }
 
 .main-nav a:hover {
-    color: #192227;
+    color: #2E1412;
 }
 
 .header {
@@ -74,13 +74,22 @@ a {
     position: sticky;
     overflow: hidden;
     top: 0;
+    z-index: 3;
+}
+
+img {
+    max-height: 250px;
 }
 
 .container1 p,
 .container2 p,
 .container3 p,
 .container4 p,
-.container5 p {
+.container5 p, 
+.container6 p,
+.container7 p,
+.container8 p,
+.container9 p {
     color: purple;
     font-size: 20px;
 }
@@ -89,7 +98,11 @@ a {
 .container2 h2,
 .container3 h2,
 .container4 h2,
-.container5 h2 {
+.container5 h2,
+.container6 h2,
+.container7 h2,
+.container8 h2,
+.container9 h2  {
     color: purple;
     font-size: 25px;
 }
@@ -99,7 +112,10 @@ a {
 .container3,
 .container4,
 .container5,
-.container6 {
+.container6,
+.container7,
+.container8,
+.container9 {
     padding-top: .5em;
     padding-bottom: .5em;
     border: 1px solid ;
@@ -114,8 +130,16 @@ a {
 .container3:hover,
 .container4:hover,
 .container5:hover,
-.container6:hover {
-    box-shadow: 10px 10px 10px 10px rgba(0,0,0, 0.75);
+.container7:hover,
+.container8:hover,
+.container9:hover {
+    box-shadow: 7px 7px 7px 7px rgba(0,0,0, 0.35);
+    z-index: 2;
+  }
+
+  .container6:hover,
+  .container9:hover {
+    box-shadow: -7px 0px 7px rgba(0,0,0, 0.45);
     z-index: 2;
   }
 
@@ -211,6 +235,18 @@ a {
 
     .container6 {
         grid-column: 5/6;
+    }
+
+    .container7 {
+        grid-column: 1/3;
+    }
+
+    .container8 {
+        grid-column: 3/4;
+    }
+
+    .container9 {
+        grid-column: 4/6;
     }
 
 }
